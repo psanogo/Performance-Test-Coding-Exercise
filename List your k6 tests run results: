@@ -1,0 +1,12 @@
+Number of iterations
+
+Percentage of checks passed
+
+Median HTTP request duration
+
+HTTP requests failed
+
+ Number of iterationsThis metric is labeled iterations and shows the total number of times the test script's main function was completed during the test run
+
+Percentage of checks passedThe checks metric reports the overall success rate of your test script's check() assertions. A single check, such as check(res, { 'is status 200': (r) => r.status === 200 }), will contribute to this metric. It is often represented as a percentage rate (e.g., rate=100.00%). Median HTTP request durationThis can be found under the http_req_duration metric. The duration metric is a Trend type and reports several statistics, including the median (med), which shows the value at which 50% of requests were faster and 50% were slower. HTTP requests failedThe http_req_failed metric shows the percentage of HTTP requests that failed. A request is typically considered a failure if it results in a non-2xx status code. This is a Rate type metric, with a value from 0 to 1, where 1.00 represents 100% failure and 0.00 represents 0% failure.   
+
